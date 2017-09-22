@@ -55,7 +55,7 @@ define (['jquery','template','cookie'],function($,template){
 
    var tpl = '<div class="avatar img-circle"><img src="{{tc_avatar}}"></div><h4>{{tc_name}}</h4>';
       
-  console.log(loginInfo) 
+    console.log(loginInfo) 
    var html = template.render(tpl,loginInfo);
     $('.aside .profile').html(html);
 });
