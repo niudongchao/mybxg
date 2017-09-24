@@ -28,14 +28,15 @@ define(['jquery','template','util','datepicker','language'],function($,template,
     //实现表单提交
     function submitForm(url){
          $('#teacherBtn').click(function(){
+         
            $.ajax({
               type:'post',
               url:url,
               data:$('#teacherForm').serialize(),
               dataType:'json',
-              success:function(){
+              success:function(data){
                 if(data.code ==200){
-                  location.href = '/teacher/list';
+                  // location.href = '/teacher/list';
                 }
               }
            });
