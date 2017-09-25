@@ -10,8 +10,8 @@ define(['jquery','template','uploadify'],function($,template){
     $('#settingsInfo').html(html);
     //处理头像上传
     $('#upfile').uploadify({
-        width : 120,
-        height : 120,
+       width:'120',
+       height:'120',
         buttonText : '',
         itemTemplate : '<span></span>',
         swf : '/public/assets/uploadify/uploadify.swf',
