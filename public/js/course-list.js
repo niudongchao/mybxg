@@ -9,8 +9,8 @@ $.ajax({
 	dataType:'json',
 	success:function(data){
      //解析数据，渲染页面
-     var html = template('courseTpl',{list:data.result});
-     $('#courseInfo').html(html);
+      var html = template('courseTpl',{list:data.result});
+      $('#courseInfo').html(html);
 	}
 });
 });
